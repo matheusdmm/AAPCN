@@ -7,7 +7,7 @@ const Projetos: React.FC = () => {
     <>
       <Navbar links={links} />
 
-      <section id="projetos" className="py-16 bg-white">
+      <section id="projetos" className="py-16 bg-white h-[80vh]">
         <div className="max-w-screen-xl mx-auto px-4">
           <h2 className="text-4xl font-bold text-center text-[#084a60] mb-12">
             Projetos
@@ -25,8 +25,8 @@ const Projetos: React.FC = () => {
                   Projeto 1
                 </h3>
                 <p className="text-gray-700 mb-4">
-                  Este é um projeto incrível que explora novas soluções
-                  tecnológicas para o desenvolvimento sustentável.
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Voluptatibus nemo libero ducimus possimus repellat suscipit?
                 </p>
               </div>
             </div>
@@ -42,8 +42,9 @@ const Projetos: React.FC = () => {
                   Projeto 2
                 </h3>
                 <p className="text-gray-700 mb-4">
-                  Este projeto visa melhorar a eficiência energética em
-                  ambientes urbanos, usando soluções inovadoras.
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. A
+                  ducimus aut deleniti velit deserunt cupiditate iste explicabo
+                  unde sint veritatis.
                 </p>
               </div>
             </div>
@@ -59,8 +60,9 @@ const Projetos: React.FC = () => {
                   Projeto 3
                 </h3>
                 <p className="text-gray-700 mb-4">
-                  Este projeto foca no desenvolvimento de softwares de automação
-                  para melhorar a gestão de processos industriais.
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Maiores tempora quos at voluptate, vel adipisci dignissimos
+                  voluptates?
                 </p>
               </div>
             </div>

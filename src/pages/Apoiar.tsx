@@ -7,7 +7,7 @@ const Apoiar = () => {
     <>
       <Navbar links={links} />
 
-      <section id="como-apoiar" className="py-16 bg-gray-100">
+      <section id="como-apoiar" className="py-16 bg-white h-[80vh]">
         <div className="max-w-screen-xl mx-auto px-4 text-center">
           <h2 className="text-4xl font-bold text-[#084a60] mb-8">
             Como Apoiar

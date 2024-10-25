@@ -1,4 +1,3 @@
-import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import Header from '../components/Header';
 import links from '../components/Links';
@@ -8,10 +7,9 @@ const headerImg = 'https://via.placeholder.com/1920x1080';
 const Index = () => {
   return (
     <>
-      <Navbar links={links} />
       <Header imgSource={headerImg} />
 
-      <section id="sobre" className="py-16 bg-gray-100">
+      <section id="sobre" className="py-16 bg-white">
         <div className="max-w-screen-xl mx-auto px-4">
           <h2 className="text-4xl font-bold text-center text-[#ae1c27] mb-8">
             Quem Somos Nós?
