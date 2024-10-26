@@ -1,36 +1,42 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
-// Interface para os links da navbar
-interface Link {
-  name: string;
-  href: string;
-}
-
-interface INavbar {
-  links: Link[];
-}
-
-const Footer: React.FC<INavbar> = ({ links }) => {
+const Footer: React.FC = () => {
   return (
-    <footer className="bg-[#ae1c27] text-white py-8">
+    <footer className="bg-[#ae1c27] text-white py-8 shadow-[0px_-2px_15px_12px_#00000024]">
       <div className="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
-          <div className="flex space-x-4 rtl:space-x-reverse">
-            {links.map((link) => (
-              <a
-                key={link.name}
-                href={link.href}
-                className="text-white hover:text-[#ae1c27]"
-              >
-                {link.name}
-              </a>
-            ))}
+          <div className="flex space-x-4">
+            <Link
+              to="/sobre"
+              className="text-white hover:text-[#FAFAFA] relative w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-[#FAFAFA] after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center"
+            >
+              Sobre
+            </Link>
+            <Link
+              to="/projetos"
+              className="text-white hover:text-[#FAFAFA] relative w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-[#FAFAFA] after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center"
+            >
+              Projetos
+            </Link>
+            <Link
+              to="/como-apoiar"
+              className="text-white hover:text-[#FAFAFA] relative w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-[#FAFAFA] after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center"
+            >
+              Como Ajudar
+            </Link>
+            <Link
+              to="/contato"
+              className="text-white hover:text-[#FAFAFA] relative w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-[#FAFAFA] after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center"
+            >
+              Contato
+            </Link>
           </div>
 
-          <div className="flex space-x-4 rtl:space-x-reverse">
+          <div className="flex space-x-4">
             <a
               href="#"
-              className="text-white hover:text-[#ae1c27]"
+              className="text-white hover:text-[#FAFAFA]"
               aria-label="Facebook"
             >
               <svg
@@ -43,7 +49,7 @@ const Footer: React.FC<INavbar> = ({ links }) => {
             </a>
             <a
               href="#"
-              className="text-white hover:text-[#ae1c27]"
+              className="text-white hover:text-[#FAFAFA]"
               aria-label="Instagram"
             >
               <svg
@@ -56,7 +62,7 @@ const Footer: React.FC<INavbar> = ({ links }) => {
             </a>
             <a
               href="#"
-              className="text-white hover:text-[#ae1c27]"
+              className="text-white hover:text-[#FAFAFA]"
               aria-label="LinkedIn"
             >
               <svg

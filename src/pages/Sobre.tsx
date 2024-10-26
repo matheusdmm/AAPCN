@@ -1,12 +1,7 @@
-import Navbar from '../components/Navbar';
-import Footer from '../components/Footer';
-import links from '../components/Links';
-
 const Sobre = () => {
   return (
     <>
-      <Navbar links={links} />
-      <section id="sobre" className="py-16 bg-white h-[80vh]">
+      <section id="sobre" className="py-16 bg-white h-screen">
         <div className="max-w-screen-xl mx-auto px-4">
           <h2 className="text-4xl font-bold text-center text-[#ae1c27] mb-8">
             Quem Somos Nós?
@@ -97,8 +92,6 @@ const Sobre = () => {
           </div>
         </div>
       </section>
-
-      <Footer links={links} />
     </>
   );
 };

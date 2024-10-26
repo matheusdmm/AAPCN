@@ -3,8 +3,8 @@ import { Link } from 'react-router-dom';
 const Navbar = () => {
   return (
     <>
-      <nav className="bg-white border-gray-200 dark:bg-white fixed top-0 w-full z-50 shadow-[rgba(0,_0,_0,_0.2)_0px_2px_40px_-7px]">
-        <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4 ">
+      <nav className="bg-white dark:bg-white fixed top-0 w-full z-50 shadow-[rgba(0,_0,_0,_0.2)_0px_2px_40px_-7px]">
+        <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
           <Link
             to="/"
             className="flex items-center space-x-3 rtl:space-x-reverse"
@@ -18,12 +18,12 @@ const Navbar = () => {
               AAPCN
             </span>
           </Link>
-          <div className="hidden w-full md:block md:w-auto">
-            <ul className="font-medium flex flex-col p-4 md:p-0 mt-4 rounded-lg md:flex-row md:space-x-4">
+          <div className="hidden w-full md:block md:w-auto ">
+            <ul className="text-[#ae1c27] font-medium flex flex-col p-4 md:p-0 mt-4 rounded-lg md:flex-row md:space-x-4">
               <li className="flex items-center">
                 <Link
                   to="/"
-                  className="block py-2 px-3 text-[#084a60] rounded hover:text-[#ae1c27] text-lg"
+                  className="block py-2 px-3 rounded hover:text-[#8a151f] text-lg"
                 >
                   HOME
                 </Link>
@@ -32,7 +32,7 @@ const Navbar = () => {
               <li className="flex items-center">
                 <Link
                   to="/sobre"
-                  className="block py-2 px-3 text-[#084a60] rounded hover:text-[#ae1c27] text-lg"
+                  className="block py-2 px-3 rounded hover:text-[#8a151f] text-lg"
                 >
                   SOBRE
                 </Link>
@@ -41,7 +41,7 @@ const Navbar = () => {
               <li className="flex items-center">
                 <Link
                   to="/projetos"
-                  className="block py-2 px-3 text-[#084a60] rounded hover:text-[#ae1c27] text-lg"
+                  className="block py-2 px-3 rounded hover:text-[#8a151f] text-lg"
                 >
                   PROJETOS
                 </Link>
@@ -50,7 +50,7 @@ const Navbar = () => {
               <li className="flex items-center">
                 <Link
                   to="/como-apoiar"
-                  className="block py-2 px-3 text-[#084a60] rounded hover:text-[#ae1c27] text-lg"
+                  className="block py-2 px-3 rounded hover:text-[#8a151f] text-lg"
                 >
                   COMO APOIAR
                 </Link>
@@ -59,7 +59,7 @@ const Navbar = () => {
               <li className="flex items-center">
                 <Link
                   to="/contato"
-                  className="block py-2 px-3 text-[#084a60] rounded hover:text-[#ae1c27] text-lg"
+                  className="block py-2 px-3 rounded hover:text-[#8a151f] text-lg"
                 >
                   CONTATO
                 </Link>

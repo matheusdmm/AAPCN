@@ -1,8 +1,7 @@
-import Footer from '../components/Footer';
 import Header from '../components/Header';
-import links from '../components/Links';
 
-const headerImg = 'https://via.placeholder.com/1920x1080';
+const headerImg =
+  'https://images.unsplash.com/photo-1506463108611-88834e9f6169?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D';
 
 const Index = () => {
   return (
@@ -46,8 +45,6 @@ const Index = () => {
           </div>
         </div>
       </section>
-
-      <Footer links={links} />
     </>
   );
 };

@@ -1,15 +1,9 @@
-import Navbar from '../components/Navbar';
-import Footer from '../components/Footer';
-import links from '../components/Links';
-
 const Apoiar = () => {
   return (
     <>
-      <Navbar links={links} />
-
-      <section id="como-apoiar" className="py-16 bg-white h-[80vh]">
+      <section id="como-apoiar" className="py-16 bg-white h-screen">
         <div className="max-w-screen-xl mx-auto px-4 text-center">
-          <h2 className="text-4xl font-bold text-[#084a60] mb-8">
+          <h2 className="text-4xl font-bold text-[#ae1c27] mb-8">
             Como Apoiar
           </h2>
           <p className="text-lg text-gray-700 mb-12">
@@ -60,8 +54,6 @@ const Apoiar = () => {
           </div>
         </div>
       </section>
-
-      <Footer links={links} />
     </>
   );
 };
