@@ -7,6 +7,8 @@ const Sobre = () => {
             Quem Somos Nós?
           </h2>
 
+          <hr className="my-12 h-0.5 border-t-0 bg-[#ae1c27]" />
+
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div>
               <p className="text-lg text-gray-700">

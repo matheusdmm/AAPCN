@@ -6,6 +6,9 @@ const Apoiar = () => {
           <h2 className="text-4xl font-bold text-[#ae1c27] mb-8">
             Como Apoiar
           </h2>
+
+          <hr className="my-12 h-0.5 border-t-0 bg-[#ae1c27]" />
+
           <p className="text-lg text-gray-700 mb-12">
             Sua contribuição é essencial para o sucesso dos nossos projetos.
             Confira abaixo algumas maneiras de nos apoiar e faça parte da nossa
