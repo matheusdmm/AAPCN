@@ -1,12 +1,8 @@
-import { Link, useLocation } from 'react-router-dom';
-import { useState } from 'react';
+import { Link } from 'react-router-dom';
+import { useNavbar } from '../logic/LNavbar';
 
 const Navbar = () => {
-  const location = useLocation();
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const isActive = (path: string) => location.pathname === path;
-  const menuRoutes = ['/', '/sobre', '/projetos', '/como-apoiar', '/contato'];
-  const logo = 'https://via.placeholder.com/200x100';
+  const { isMenuOpen, toggleMenu, isActive, menuRoutes, logo } = useNavbar();
 
   return (
     <nav className="bg-white fixed top-0 w-full z-50 shadow-[rgba(0,_0,_0,_0.2)_0px_2px_40px_-7px]">
@@ -21,17 +17,25 @@ const Navbar = () => {
           </span>
         </Link>
 
-        {/* Botão de Menu Mobile */}
+        {/* Botão de Menu Mobile com Efeito */}
         <button
-          onClick={() => setIsMenuOpen(!isMenuOpen)}
-          className="md:hidden block text-[#ae1c27] focus:outline-none "
+          onClick={toggleMenu}
+          className="md:hidden block text-[#ae1c27] focus:outline-none"
           aria-label="Toggle menu"
         >
           <svg
-            className="w-6 h-6 animate__jello"
+            className={`w-6 h-6 ${
+              isMenuOpen ? 'animate__animated animate__jello' : ''
+            }`}
             fill="none"
             stroke="currentColor"
             viewBox="0 0 24 24"
+            onAnimationEnd={(e) =>
+              e.currentTarget.classList.remove(
+                'animate__animated',
+                'animate__jello'
+              )
+            }
           >
             <path
               strokeLinecap="round"
@@ -52,7 +56,7 @@ const Navbar = () => {
               <li key={index} className="flex items-center">
                 <Link
                   to={path}
-                  onClick={() => setIsMenuOpen(false)}
+                  onClick={() => toggleMenu()}
                   className={`relative w-fit block py-2 px-3 rounded text-lg 
                               text-[#ae1c27] hover:text-[#8a151f] 
                               after:content-[''] after:absolute after:left-0 
@@ -78,5 +82,4 @@ const Navbar = () => {
     </nav>
   );
 };
-
 export default Navbar;

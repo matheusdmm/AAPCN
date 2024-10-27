@@ -17,7 +17,7 @@ const Projetos: React.FC = () => {
 
           <hr className="my-12 h-0.5 border-t-0 bg-[#ae1c27]" />
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 animate__animated animate__fadeIn">
             <Card img={test.img} title={test.title} text={test.text} />
             <Card img={test.img} title={test.title} text={test.text} />
             <Card img={test.img} title={test.title} text={test.text} />
