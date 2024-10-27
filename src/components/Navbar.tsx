@@ -4,10 +4,9 @@ import { useState } from 'react';
 const Navbar = () => {
   const location = useLocation();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-
   const isActive = (path: string) => location.pathname === path;
-
   const menuRoutes = ['/', '/sobre', '/projetos', '/como-apoiar', '/contato'];
+  const logo = 'https://via.placeholder.com/200x100';
 
   return (
     <nav className="bg-white fixed top-0 w-full z-50 shadow-[rgba(0,_0,_0,_0.2)_0px_2px_40px_-7px]">
@@ -16,11 +15,7 @@ const Navbar = () => {
           to="/"
           className="flex items-center space-x-3 rtl:space-x-reverse"
         >
-          <img
-            src="https://via.placeholder.com/200x100"
-            className="h-8"
-            alt="AAPCN"
-          />
+          <img src={logo} className="h-8" alt="AAPCN" />
           <span className="self-center text-3xl font-semibold whitespace-nowrap text-[#ae1c27]">
             AAPCN
           </span>
@@ -33,7 +28,7 @@ const Navbar = () => {
           aria-label="Toggle menu"
         >
           <svg
-            className="w-6 h-6"
+            className="w-6 h-6 animate__jello"
             fill="none"
             stroke="currentColor"
             viewBox="0 0 24 24"
