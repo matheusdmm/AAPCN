@@ -3,12 +3,17 @@ import Header from '../components/Header';
 const headerImg =
   'https://images.unsplash.com/photo-1506463108611-88834e9f6169?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D';
 
+const headerImgs = [
+  'https://images.unsplash.com/photo-1506463108611-88834e9f6169?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+  'https://placeholder.com/1920x1080',
+];
+
 const Index = () => {
   return (
     <>
-      <Header imgSource={headerImg} />
+      <Header imgSources={headerImgs} />
 
-      <section id="sobre" className="py-16 bg-white">
+      <section className="py-16 bg-white">
         <div className="max-w-screen-xl mx-auto px-4">
           <h2 className="text-4xl font-bold text-center text-[#ae1c27] mb-8">
             Quem Somos Nós?

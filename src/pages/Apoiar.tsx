@@ -1,9 +1,9 @@
 const Apoiar = () => {
   return (
     <>
-      <section id="como-apoiar" className="py-16 bg-white">
-        <div className="max-w-screen-xl mx-auto px-4 text-center">
-          <h2 className="text-4xl font-bold text-[#ae1c27] mb-8">
+      <section className="py-16 bg-white">
+        <div className="max-w-screen-xl mx-auto px-4">
+          <h2 className="text-4xl font-bold text-center text-[#ae1c27] mb-8">
             Como Apoiar
           </h2>
 

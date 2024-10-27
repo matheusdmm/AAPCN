@@ -1,7 +1,7 @@
 const Sobre = () => {
   return (
     <>
-      <section id="sobre" className="py-16 bg-white">
+      <section className="py-16 bg-white">
         <div className="max-w-screen-xl mx-auto px-4">
           <h2 className="text-4xl font-bold text-center text-[#ae1c27] mb-8">
             Quem Somos Nós?

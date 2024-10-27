@@ -7,10 +7,11 @@ const Navbar = () => {
 
   const isActive = (path: string) => location.pathname === path;
 
+  const menuRoutes = ['/', '/sobre', '/projetos', '/como-apoiar', '/contato'];
+
   return (
     <nav className="bg-white fixed top-0 w-full z-50 shadow-[rgba(0,_0,_0,_0.2)_0px_2px_40px_-7px]">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-        {/* Logo */}
         <Link
           to="/"
           className="flex items-center space-x-3 rtl:space-x-reverse"
@@ -46,20 +47,18 @@ const Navbar = () => {
           </svg>
         </button>
 
-        {/* Menu de Navegação */}
         <div
           className={`w-full md:block md:w-auto ${
             isMenuOpen ? 'block' : 'hidden'
           }`}
         >
           <ul className="text-[#ae1c27] font-medium flex flex-col md:flex-row md:space-x-4 p-4 md:p-0 mt-4 rounded-lg bg-white md:bg-transparent">
-            {['/', '/sobre', '/projetos', '/como-apoiar', '/contato'].map(
-              (path, index) => (
-                <li key={index} className="flex items-center">
-                  <Link
-                    to={path}
-                    onClick={() => setIsMenuOpen(false)} // Fecha o menu ao clicar em um item
-                    className={`relative w-fit block py-2 px-3 rounded text-lg 
+            {menuRoutes.map((path, index) => (
+              <li key={index} className="flex items-center">
+                <Link
+                  to={path}
+                  onClick={() => setIsMenuOpen(false)}
+                  className={`relative w-fit block py-2 px-3 rounded text-lg 
                               text-[#ae1c27] hover:text-[#8a151f] 
                               after:content-[''] after:absolute after:left-0 
                               after:bottom-0 after:h-[3px] after:bg-[#ae1c27] 
@@ -70,15 +69,14 @@ const Navbar = () => {
                                   ? 'after:scale-x-100'
                                   : 'after:scale-x-0 hover:after:scale-x-100'
                               }`}
-                  >
-                    {path === '/' ? 'HOME' : path.substring(1).toUpperCase()}
-                  </Link>
-                  {index < 4 && (
-                    <span className="hidden md:block mx-2 border-l border-gray-300 h-6"></span>
-                  )}
-                </li>
-              )
-            )}
+                >
+                  {path === '/' ? 'HOME' : path.substring(1).toUpperCase()}
+                </Link>
+                {index < 4 && (
+                  <span className="hidden md:block mx-2 border-l border-gray-300 h-6"></span>
+                )}
+              </li>
+            ))}
           </ul>
         </div>
       </div>

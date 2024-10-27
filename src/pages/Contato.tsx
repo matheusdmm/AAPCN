@@ -32,7 +32,7 @@ const Contato = () => {
   };
 
   return (
-    <section id="contato" className="py-16 bg-white">
+    <section className="py-16 bg-white">
       <div className="max-w-screen-xl mx-auto px-4 flex">
         <div className="w-1/3 pr-8">
           <h3 className="text-2xl font-semibold text-[#ae1c27] mb-4">
